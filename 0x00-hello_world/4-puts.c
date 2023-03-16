@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
- * Entry point lma
  * main - entry point
- *
+ * Description: Longer Description
  * Return: Always 0 (Success)
  */
 int main(void)
