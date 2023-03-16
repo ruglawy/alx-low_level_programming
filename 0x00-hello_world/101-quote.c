@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - Entry Point
  * Description: Printing a statement without printf() or puts()
