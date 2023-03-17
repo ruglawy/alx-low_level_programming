@@ -10,6 +10,7 @@ int main(void)
 {
 	char character = 'z';
 	int number = 'z' - 'a';
+	int i;
 
 	for (i = 0; i <= number; i++)
 	{
