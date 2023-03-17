@@ -4,10 +4,10 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
-/* 
+/**
  * main - Entry Point
  * main - Entry Point
- * Description - If else
+ * Description: If else
  *
  * Return: Always 0 (Success)
  */
