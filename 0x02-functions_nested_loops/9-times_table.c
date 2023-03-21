@@ -19,13 +19,16 @@ void times_table(void)
 			{
 				_putchar(tenth + '0');
 			}
+			else
+			{
+				_putchar(' ');
+			}
 			_putchar(unit + '0');
 			if (j == 9)
 			{
 				break;
 			}
 			_putchar(',');
-			_putchar(' ');
 			_putchar(' ');
 		}
 		_putchar('\n');
