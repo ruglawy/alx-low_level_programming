@@ -2,6 +2,7 @@
 /**
  * _abs - Returns absolute value
  * Description: kk
+ * @number: number
  *
  * Return: value after absolute process
  */
