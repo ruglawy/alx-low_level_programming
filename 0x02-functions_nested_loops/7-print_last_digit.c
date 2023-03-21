@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_last_digit: prints last digit of a number
+ * print_last_digit - prints last digit of a number
  * Description: stated
  * @number: number
  *
@@ -9,7 +9,7 @@
 
 int print_last_digit(int number)
 {
-	if (number < 0)
+	if (number < 0 || number == INT_MIN)
 	{
 		number *= -1;
 	}
