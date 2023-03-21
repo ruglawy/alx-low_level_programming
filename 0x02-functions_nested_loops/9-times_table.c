@@ -13,10 +13,16 @@ void times_table(void)
 	{
 		for (j = 0; j <= 9; j++)
 		{
-			_putchar((i * j) + '0');
+			int unit = (i * j) % 10;
+			int tenth = (i * j) / 10;
+			if (tenth != 0)
+			{
+				_putchar(tenth + '0');
+			}
+			_putchar(unit + '0');
 			if (j == 9)
 			{
-				break;	
+				break;
 			}
 			_putchar(',');
 			_putchar(' ');
