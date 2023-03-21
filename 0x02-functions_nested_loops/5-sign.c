@@ -2,7 +2,7 @@
 /**
  * print_sign: Prints sign
  * @n: number
- *
+ * Description: kk
  * Return: 1 if positive, 0 if zero, -1 if negative
  */
 
