@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_sign: Prints sign
+ * print_sign - Prints sign
  * Description: kk..
  * @n: number
  *
