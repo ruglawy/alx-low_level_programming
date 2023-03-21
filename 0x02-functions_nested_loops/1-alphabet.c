@@ -13,10 +13,10 @@ void print_alphabet(void)
 	int i;
 	int number = 'a' - 'z';
 
-	for (i = 0; i <= number; i++)
+	for (i = 1; i <= number; i++)
 	{
 		_putchar(character);
 	}
-	_putchar('\n');
+	/*_putchar('\n');*/
 
 }
