@@ -1,8 +1,9 @@
 #include "main.h"
 /**
  * print_sign: Prints sign
+ * Description: kk..
  * @n: number
- * Description: kk
+ *
  * Return: 1 if positive, 0 if zero, -1 if negative
  */
 
