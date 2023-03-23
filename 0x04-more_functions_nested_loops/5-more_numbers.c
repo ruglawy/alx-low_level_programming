@@ -6,7 +6,6 @@
 void more_numbers(void)
 {
 	char character = '0';
-	int range = '9' - '0';
 	int i, j;
 	int flag = 0;
 
