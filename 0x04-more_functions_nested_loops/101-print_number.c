@@ -10,6 +10,12 @@ void print_number(int n)
 	int iteration = 1;
 	int i;
 	int digit;
+
+	if (n < 0)
+	{
+		n *= -1;
+		_putchar('-');
+	}
 	
 	while (1)
 	{
