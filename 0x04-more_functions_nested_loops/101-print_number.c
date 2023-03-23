@@ -11,7 +11,7 @@ void print_number(int n)
 	int i;
 	int digit;
 	
-	while (true)
+	while (1)
 	{
 		if (divisor >= n)
 		{
