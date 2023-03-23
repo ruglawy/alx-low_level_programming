@@ -9,6 +9,7 @@ void print_number(int n)
 	int converter = 9;
 	int iteration = 1;
 	int i;
+	int digit;
 	
 	while (true)
 	{
@@ -28,8 +29,7 @@ void print_number(int n)
 	}
 	for (i = 0; i <= iteration; i++)
 	{
-		int digit = n / divisor;
-
+		digit = x / divisor;
 		n = n % divisor;
 		_putchar(digit + '0');
 		divisor = divisor / 10;
