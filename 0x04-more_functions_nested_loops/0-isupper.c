@@ -12,7 +12,7 @@ int _isupper(int c)
 	int range = 'Z' - 'A';
 	int i;
 	
-	for (i = 'A'; i <= range; i++)
+	for (i = 'A'; i <= 'Z'; i++)
 	{
 		if (i == c)
 		{
