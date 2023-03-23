@@ -22,10 +22,10 @@ void more_numbers(void)
 			{
 				flag = 1;
 				character = '0';
-			}	
+			}
 		}
 		character = '0';
 		flag = 0;
-		_putchar('\n');	
+		_putchar('\n');
 	}
 }
