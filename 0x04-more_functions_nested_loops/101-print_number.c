@@ -29,7 +29,7 @@ void print_number(int n)
 	}
 	for (i = 0; i <= iteration; i++)
 	{
-		digit = x / divisor;
+		digit = n / divisor;
 		n = n % divisor;
 		_putchar(digit + '0');
 		divisor = divisor / 10;
