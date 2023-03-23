@@ -12,7 +12,7 @@ void print_number(int n)
 	
 	while (true)
 	{
-		if (divisor >= x)
+		if (divisor >= n)
 		{
 			divisor = (divisor - converter) / 9;
 			break;
@@ -21,16 +21,16 @@ void print_number(int n)
 		converter = (converter * 10) + 9;
 		iteration++;
 	}
-	if (x / divisor == 0)
+	if (n / divisor == 0)
 	{
-		_putchar(x + '0');
+		_putchar(n + '0');
 		return;
 	}
 	for (i = 0; i <= iteration; i++)
 	{
-		int digit = x / divisor;
+		int digit = n / divisor;
 
-		x = x % divisor;
+		n = n % divisor;
 		_putchar(digit + '0');
 		divisor = divisor / 10;
 	}
