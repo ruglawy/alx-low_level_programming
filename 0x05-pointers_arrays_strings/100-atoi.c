@@ -9,16 +9,11 @@ int _atoi(char *s)
 {
 	int zero = '0';
 	int nine = '9';
-	int number = 0;
-	int positive = 0;
+	unsigned int number = 0;
 	int negative = 0;
 
 	while (*s != '\0')
 	{
-		if (*s == '+')
-		{
-			positive++;
-		}
 		if (*s == '-')
 		{
 			negative++;
@@ -38,7 +33,7 @@ int _atoi(char *s)
 		s++;
 	}
 
-	if (negative > positive)
+	if (negative % 2 == 1)
 	{
 		return (number * -1);
 	}
