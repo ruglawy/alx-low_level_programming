@@ -27,7 +27,7 @@ int _atoi(char *s)
 		{
 			break;
 		}
-		*s++;
+		s++;
 	}
 
 	while (*s >= zero && *s <= nine)
@@ -35,7 +35,7 @@ int _atoi(char *s)
 		int digit = *s - '0';
 
 		number = (number * 10) + digit;
-		*s++;
+		s++;
 	}
 
 	if (negative > positive)
