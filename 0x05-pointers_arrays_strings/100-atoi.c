@@ -40,7 +40,7 @@ int _atoi(char *s)
 
 	if (negative > positive)
 	{
-		return number * -1;
+		return (number * -1);
 	}
-	return number;
+	return (number);
 }
