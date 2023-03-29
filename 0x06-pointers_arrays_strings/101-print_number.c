@@ -7,8 +7,8 @@
  */
 void print_number(int n)
 {
-	int divisor = 99;
-	int converter = 9;
+	unsigned int divisor = 99;
+	unsigned int converter = 9;
 	int iteration = 1;
 	int i;
 
