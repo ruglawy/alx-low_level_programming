@@ -9,15 +9,27 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int countDest = 0;
-	int i;
+    int countDest = 0;
+    int countSrc = 0;
+    int i;
 
-	for (i = 0; i < n && *(src + i) != '\0'; i++)
-	{
-		*(dest + countDest) = *(src + i);
-		countDest++;
-	}
-	*(dest + countDest) = '\0';
+    for (i = 0; *(src + i) != '\0'; i++)
+    {
+        countSrc++;
+    }
 
-	return (dest);
+    for (i = 0; i < n && *(src + i) != '\0'; i++)
+    {
+        *(dest + countDest) = *(src + i);
+        countDest++;
+    }
+    if (countSrc < n)
+    {
+        for (i = countDest; *(dest + i) != '\0'; i++)
+        {
+            *(dest + i) = '\0';
+        }
+    }
+
+    return (dest);
 }
