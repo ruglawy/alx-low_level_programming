@@ -31,6 +31,7 @@ char *leet(char *s)
 		{
 			*(s + count) = 1 + '0';
 		}
+		count++;
 	}
 
 	return (s);
