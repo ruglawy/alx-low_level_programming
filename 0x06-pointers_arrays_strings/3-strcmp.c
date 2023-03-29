@@ -26,7 +26,7 @@ int _strcmp(char *s1, char *s2)
 		return (*(s1 + countS1));
 	}
 
-	if(*(s2 + countS2) != '\0')
+	if (*(s2 + countS2) != '\0')
 	{
 		return (*(s2 + countS2) * -1);
 	}
