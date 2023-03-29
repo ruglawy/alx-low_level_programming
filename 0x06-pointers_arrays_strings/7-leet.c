@@ -9,7 +9,7 @@ char *leet(char *s)
 {
 	int count = 0;
 
-	while (*(s + count) != '\0)
+	while (*(s + count) != '\0')
 	{
 		if (*(s + count) == 'a' || *(s + count) == 'A')
 		{
