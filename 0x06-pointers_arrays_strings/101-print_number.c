@@ -12,7 +12,7 @@ void print_number(int n)
 	int iteration = 1;
 	int i;
 
-	while (true)
+	while (1)
 	{
 		if (divisor >= n)
 		{
