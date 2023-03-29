@@ -12,6 +12,11 @@ void print_number(int n)
 	int iteration = 1;
 	int i;
 
+	if (n < 0)
+	{
+		n *= -1;
+		_putchar('-');
+	}
 	while (1)
 	{
 		if (divisor >= n)
