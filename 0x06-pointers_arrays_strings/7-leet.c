@@ -21,7 +21,7 @@ char *leet(char *s)
 		}
 		else if (*(s + count) == 'o' || *(s + count) == 'O')
 		{
-			*(s + count) = 0 + '0'
+			*(s + count) = 0 + '0';
 		}
 		else if (*(s + count) == 't' || *(s + count) == 'T')
 		{
