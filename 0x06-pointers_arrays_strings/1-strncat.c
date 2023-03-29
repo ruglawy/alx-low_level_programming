@@ -17,7 +17,7 @@ char *_strncat(char *dest, char *src, int n)
 		countDest++;
 	}
 
-	for (i = 1; i <= n && *(src + i) != '\0'; i++)
+	for (i = 0; i < n && *(src + i) != '\0'; i++)
 	{
 		*(dest + countDest) = *(src + i);
 		countDest++;
