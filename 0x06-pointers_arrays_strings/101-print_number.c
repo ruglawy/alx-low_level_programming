@@ -11,15 +11,20 @@ void print_number(int n)
 	unsigned int converter = 9;
 	int iteration = 1;
 	int i;
+	unsigned int x;
 
 	if (n < 0)
 	{
-		n *= -1;
+		x = n * -1;
 		_putchar('-');
+	}
+	else
+	{
+		x = n;
 	}
 	while (1)
 	{
-		if (divisor >= n)
+		if (divisor >= x)
 		{
 			divisor = (divisor - converter) / 9;
 			break;
@@ -29,17 +34,17 @@ void print_number(int n)
 		iteration++;
 	}
 
-	if (n / divisor == 0)
+	if (x / divisor == 0)
 	{
-		_putchar(n + '0');
+		_putchar(x + '0');
 		return;
 	}
 
 	for (i = 0; i <= iteration; i++)
 	{
-		int digit = n / divisor;
+		int digit = x / divisor;
 
-		n %= divisor;
+		x %= divisor;
 		_putchar(digit + '0');
 		divisor /= 10;
 	}
