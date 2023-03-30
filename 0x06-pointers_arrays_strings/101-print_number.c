@@ -7,11 +7,11 @@
  */
 void print_number(int n)
 {
-	uint64_t divisor = 99;
-	uint64_t converter = 9;
+	unsigned int divisor = 99;
+	unsigned int converter = 9;
 	int iteration = 1;
 	int i;
-	uint64_t x;
+	unsigned int x;
 
 	if (n < 0)
 	{
