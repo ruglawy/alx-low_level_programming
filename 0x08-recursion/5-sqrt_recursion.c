@@ -7,7 +7,7 @@
  *
  * Return: result
  */
-int _sqrt_helper(int n, int min, int max)
+int _sqrt_helper(long n, int min, int max)
 {
 	if ((max * max) < n)
 	{
