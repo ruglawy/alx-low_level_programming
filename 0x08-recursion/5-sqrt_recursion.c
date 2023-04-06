@@ -27,7 +27,7 @@ int _sqrt_helper(long n, int min, int max)
 		}
 		else if ((guess * guess) > n)
 		{
-		return (_sqrt_helper(n, min, guess - 1));
+			return (_sqrt_helper(n, min, guess - 1));
 		}
 		else
 		{
