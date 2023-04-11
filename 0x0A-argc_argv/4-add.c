@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 /**
  * main - ...
  * @argc: ...
@@ -8,7 +7,7 @@
  *
  * Return: ..
  */
-int main(int agrc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int i;
 	int j;
