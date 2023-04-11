@@ -22,6 +22,7 @@ char *_strdup(char *str)
 
 	if (arr == NULL || str == NULL)
 	{
+		printf("failed to allocate memory");
 		return (NULL);
 	}
 	for (i = 0; i < count; i++)
@@ -29,6 +30,6 @@ char *_strdup(char *str)
 		*(arr + i) = *(str + i);
 	}
 	*(arr + count) = '\0';
-	
+
 	return (arr);
 }
