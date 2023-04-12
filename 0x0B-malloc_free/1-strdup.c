@@ -13,6 +13,11 @@ char *_strdup(char *str)
 	int count = 0;
 	int i;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	while (*(str + count) != '\0')
 	{
 		count++;
@@ -22,7 +27,6 @@ char *_strdup(char *str)
 
 	if (arr == NULL || str == NULL)
 	{
-		printf("failed to allocate memory");
 		return (NULL);
 	}
 	for (i = 0; i < count; i++)
