@@ -28,12 +28,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		count1++;
 	}
-	while (*(s2 + count2) != '\0' && count2 <(int)n)
+
+	while (*(s2 + count2) != '\0' && count2 < (int)n)
 	{
 		count2++;
 	}
 
 	newString = malloc(sizeof(char) * ((count1 + count2) + 1));
+	
+	if (newString == NULL)
+	{
+		return (NULL);
+	}
 
 	for (i = 0; i < count1; i++)
 	{
