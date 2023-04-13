@@ -10,8 +10,8 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int count1 = 0;
-	int count2 = 0;
+	unsigned int count1 = 0;
+	unsigned int count2 = 0;
 	char *newString;
 	int i;
 
@@ -29,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		count1++;
 	}
 
-	while (*(s2 + count2) != '\0' && count2 < (int)n)
+	while (*(s2 + count2) != '\0' && count2 < n)
 	{
 		count2++;
 	}
