@@ -30,7 +30,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		count1++;
 	}
 
-	while (*(s2 + count2) != '\0' && count2 < n)
+	while ((*(s2 + count2) != '\0') && (count2 < n))
 	{
 		count2++;
 	}
