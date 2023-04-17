@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- * dog - struct
+ * struct dog - struct
  * @name: name
  * @age: age
  * @owner: owner
