@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * struct dog - struct
+ * struct dog - just a dog
  * @name: name
- * @age: age
- * @owner: owner
+ * @age: its age
+ * @owner: owner's name
  *
  * Description: ...
  */
