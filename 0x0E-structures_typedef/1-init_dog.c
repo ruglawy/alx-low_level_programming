@@ -32,7 +32,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	{
 		free(d->owner);
 		free(d->name);
-		free(dog);
+		free(d);
 		return;
 	}
 	strcpy(d->owner, owner);
