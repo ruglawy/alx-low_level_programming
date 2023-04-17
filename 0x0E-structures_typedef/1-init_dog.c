@@ -18,7 +18,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	{
 		return;
 	}
-	d->name = malloc(sizeof(name) + 1);
+	d->name = malloc(strlen(name) + 1);
 	if (d->name == NULL)
 	{
 		free(d->name);
@@ -27,7 +27,7 @@ void init_dog(struct dog *d, char *name, float age, char *owner)
 	}
 	strcpy(d->name, name);
 	d->age = age;
-	d->owner = malloc(sizeof(owner) + 1);
+	d->owner = malloc(strlen(owner) + 1);
 	if (d->owner == NULL)
 	{
 		free(d->owner);
