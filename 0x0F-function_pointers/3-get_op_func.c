@@ -3,8 +3,6 @@
 /**
  * get_op_func - gets operator from user
  * @s: idk
- * @a: integer
- * @b: integer
  *
  * Return: result
  */
