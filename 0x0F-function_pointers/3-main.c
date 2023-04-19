@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 	}
 
 	result = func(a, b);
-	printf("%d", result);
+	printf("%d\n", result);
 
 	return (0);
 }
