@@ -6,12 +6,13 @@
  * @argc: number of arguments
  * @argv: arguments passed
  *
- * Return: 1 on success
+ * Return: 0 on success
  */
 int main(int argc, char *argv[])
 {
 	int a, b;
 	int (*func)(int, int);
+	int result;
 
 	if (argc != 4)
 	{
@@ -35,5 +36,8 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	func(a, b);
+	result = func(a, b);
+	printf("%d", result);
+
+	return (0);
 }
