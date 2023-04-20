@@ -11,7 +11,8 @@
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	int i = 0, j = 0, flag = 0;
+	int i = 0;
+	int flag = 0;
 	char *string;
 
 	va_start(ap, format);
@@ -45,6 +46,7 @@ void print_all(const char * const format, ...)
 		{
 			printf(", ");
 		}
+		flag = 0;
 		i++;
 	}
 	printf("\n");
