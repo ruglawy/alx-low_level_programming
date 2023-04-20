@@ -13,11 +13,13 @@ void print_all(const char * const format, ...)
 	va_list ap;
 	int i = 0;
 	char *string;
+	int flag = 0;
 
 	va_start(ap, format);
 	while (i < (int)(strlen(format)))
 	{
-		if (i != 0 && (format[i] == 'c' || format[i] == 's' || format[i] == 'i' || format[i] == 'f'))
+		if (i != 0 && flag == 1 &&
+		       	       (format[i] == 'c' || format[i] == 's' || format[i] == 'i' || format[i] == 'f'))
 		{
 			printf(", ");
 		}
