@@ -42,7 +42,7 @@ void print_all(const char * const format, ...)
 				flag = 1;
 				break;
 		}
-		if (i != (int)(strlen(format)) && flag == 0)
+		if (i != (int)(strlen(format)) - 1 && flag == 0)
 		{
 			printf(", ");
 		}
