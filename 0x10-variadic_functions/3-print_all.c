@@ -13,11 +13,14 @@ void print_all(const char * const format, ...)
 	va_list ap;
 	int i = 0;
 	char *string;
-	int flag = 0;
 
 	va_start(ap, format);
 	while (i < (int)(strlen(format)))
 	{
+		if (i != 0 && (format[i] == 'c' || format[i] == 's' || format[i] == 'i' || format[i] == 'f'))
+		{
+			printf(", ");
+		}
 		switch (format[i])
 		{
 			case 'c':
@@ -39,15 +42,9 @@ void print_all(const char * const format, ...)
 				printf("%d", va_arg(ap, int));
 				break;
 			default:
-				flag = 1;
 				break;
 		}
-		if (i != (int)(strlen(format)) - 1 && flag == 0)
-		{
-			printf(", ");
-		}
 		i++;
-		flag = 0;
 	}
 	printf("\n");
 }
