@@ -16,7 +16,7 @@ void print_all(const char * const format, ...)
 	int flag = 0;
 
 	va_start(ap, format);
-	while (i < strlen(format))
+	while (i < (int)(strlen(format)))
 	{
 		switch (format[i])
 		{
@@ -42,7 +42,7 @@ void print_all(const char * const format, ...)
 				flag = 1;
 				break;
 		}
-		if (i != (length - 1) && flag == 0)
+		if (i != (int)(strlen(format)) && flag == 0)
 		{
 			printf(", ");
 		}
