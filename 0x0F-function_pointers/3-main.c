@@ -24,11 +24,6 @@ int main(int argc, char *argv[])
 	b = atoi(argv[3]);
 	func = get_op_func(argv[2]);
 
-	if (argv[2][3] != ' ')
-	{
-		printf("Error\n");
-		exit(98);
-	}
 	if (func == NULL)
 	{
 		printf("Error\n");
