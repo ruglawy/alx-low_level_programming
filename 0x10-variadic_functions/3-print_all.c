@@ -11,34 +11,32 @@
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	int length = strlen(format);
 	int i = 0;
-	char ch;
-	int number;
-	float fnumber;
 	char *string;
 	int flag = 0;
 
 	va_start(ap, format);
-	while (i < length)
+	while (i < strlen(format))
 	{
-		switch(format[i])
+		switch (format[i])
 		{
 			case 'c':
-				ch = va_arg(ap, int);
-				printf("%c", ch);
+				printf("%c", va_arg(ap, int));
 				break;
 			case 'f':
-				fnumber = va_arg(ap, double);
-				printf("%f", fnumber);
+				printf("%f", va_arg(ap, double);
 				break;
 			case 's':
 				string = va_arg(ap, char*);
+				if (!string)
+				{
+					printf("(nil)");
+					break;
+				}
 				printf("%s", string);
 				break;
 			case 'i':
-				number = va_arg(ap, int);
-				printf("%d", number);
+				printf("%d", va_arg(ap, int);
 				break;
 			default:
 				flag = 1;
