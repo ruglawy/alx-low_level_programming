@@ -8,9 +8,9 @@
  */
 size_t print_list(const list_t *h)
 {
-	unsigned int number;
+	size_t num;
 
-	number = 0;
+	num = 0;
 	while (h != NULL)
 	{
 		if (h->str != NULL)
@@ -24,5 +24,5 @@ size_t print_list(const list_t *h)
 		h = h->next;
 		number++;
 	}
-	return (number);
+	return (num);
 }
