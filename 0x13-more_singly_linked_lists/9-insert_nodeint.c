@@ -28,11 +28,12 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	{
 		new->next = traverse;
 		*head = new;
-		return (new);
+		return (*head);
 	}
 	while (traverse != NULL && i < idx - 1)
 	{
 		traverse = traverse->next;
+		i++;
 	}
 	new->next = traverse->next;
 	traverse->next = new;
