@@ -18,6 +18,17 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		return (NULL);
 	}
 	traverse = *head;
+	while (traverse != NULL)
+	{
+		traverse = traverse->next;
+		i++;
+	}
+	if (idx > i + 1)
+	{
+		return (NULL);
+	}
+	traverse = *head;
+	i = 0;
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 	{
