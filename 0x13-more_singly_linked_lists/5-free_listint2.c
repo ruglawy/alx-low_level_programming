@@ -10,11 +10,11 @@ void free_listint2(listint_t **head)
 {
 	listint_t *ptr, *traverse;
 
-	traverse = *head;
 	if (head == NULL)
 	{
 		return;
 	}
+	traverse = *head;
 	while (traverse != NULL)
 	{
 		ptr = traverse;
