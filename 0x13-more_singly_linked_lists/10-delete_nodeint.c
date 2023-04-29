@@ -28,12 +28,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	}
 	i = 0;
 	traverse = *head;
-	if (index == 0)
-	{
-		*head = traverse->next;
-		free(traverse);
-		return (1)
-	}
 	while (traverse != NULL && i < index - 1)
 	{
 		traverse = traverse->next;
