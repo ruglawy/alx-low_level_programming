@@ -25,6 +25,7 @@ unsigned int binary_to_uint(const char *b)
 {
 	unsigned int number = 0, i, length, index;
 	char num[1];
+
 	if (b == NULL)
 	{
 		return (0);
@@ -33,7 +34,7 @@ unsigned int binary_to_uint(const char *b)
 	index = length - 1;
 	for (i = 0; i < length; i++)
 	{
-		if(b[i] != '0' && b[i] != '1')
+		if (b[i] != '0' && b[i] != '1')
 		{
 			return (0);
 		}
