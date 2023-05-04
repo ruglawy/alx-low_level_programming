@@ -2,13 +2,13 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * power - power
+ * po - power
  * @x: x
  * @y: y
  *
  * Return: k
  */
-unsigned int power(int x, int y)
+unsigned int po(int x, int y)
 {
 	if (y == 0)
 		return (1);
@@ -32,7 +32,7 @@ void print_binary(unsigned long int n)
 	}
 	while (1)
 	{
-		if (power(2, p) > n)
+		if (po(2, p) > n)
 		{
 			p--;
 			break;
@@ -41,10 +41,10 @@ void print_binary(unsigned long int n)
 	}
 	for (i = p; i >= 0; i--)
 	{
-		if (power(2, i) <= n)
+		if (po(2, i) <= n)
 		{
 			printf("%d", 1);
-			n -= power(2, i);
+			n -= po(2, i);
 		}
 		else
 		{
