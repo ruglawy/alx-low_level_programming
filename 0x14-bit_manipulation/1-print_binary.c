@@ -12,6 +12,11 @@ void print_binary(unsigned long int n)
 	int i;
 	unsigned int p = 0;
 	
+	if (n == 0)
+	{
+		printf("%d", 0);
+		return;
+	}
 	while (1)
 	{
 		if (power(2, p) > n)
