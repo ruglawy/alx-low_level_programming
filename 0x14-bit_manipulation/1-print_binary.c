@@ -9,7 +9,8 @@
  */
 void print_binary(unsigned long int n)
 {
-	int p = 0, i;
+	int i;
+	unsigned int p = 0;
 	
 	while (1)
 	{
