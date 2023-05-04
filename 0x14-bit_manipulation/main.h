@@ -10,7 +10,6 @@
  */
 int _putchar(char c);
 unsigned int power(int x, int y);
-unsigned int po(int x, int y);
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
 #endif
