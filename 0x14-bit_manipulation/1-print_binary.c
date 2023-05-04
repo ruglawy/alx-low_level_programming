@@ -10,7 +10,7 @@
  */
 unsigned int power(int x, int y)
 {
-	if (y==0)
+	if (y == 0)
 		return (1);
 	return (x * power(x, y - 1));
 }
@@ -24,7 +24,7 @@ void print_binary(unsigned long int n)
 {
 	int i;
 	unsigned int p = 0;
-	
+
 	if (n == 0)
 	{
 		printf("%d", 0);
