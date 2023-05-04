@@ -23,7 +23,7 @@ unsigned int power(int x, int y)
 void print_binary(unsigned long int n)
 {
 	int i;
-	unsigned int p = 0;
+	int p = 0;
 
 	if (n == 0)
 	{
