@@ -2,19 +2,6 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * po - power
- * @x: x
- * @y: y
- *
- * Return: k
- */
-unsigned int po(int x, int y)
-{
-	if (y == 0)
-		return (1);
-	return (x * power(x, y - 1));
-}
-/**
  * print_binary - converts int to binary and prints it.
  * @n: number
  *
@@ -32,7 +19,7 @@ void print_binary(unsigned long int n)
 	}
 	while (1)
 	{
-		if (po(2, p) > n)
+		if (power(2, p) > n)
 		{
 			p--;
 			break;
@@ -41,10 +28,10 @@ void print_binary(unsigned long int n)
 	}
 	for (i = p; i >= 0; i--)
 	{
-		if (po(2, i) <= n)
+		if (power(2, i) <= n)
 		{
 			printf("%d", 1);
-			n -= po(2, i);
+			n -= power(2, i);
 		}
 		else
 		{
