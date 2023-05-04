@@ -20,7 +20,7 @@ void print_binary(unsigned long int n)
 		}
 		p++;
 	}
-	for (i = p; i >= 0; i++)
+	for (i = p; i >= 0; i--)
 	{
 		if (power(2, i) <= n)
 		{
