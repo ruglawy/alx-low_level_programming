@@ -11,7 +11,7 @@
  */
 unsigned int power(int x, int y)
 {
-	if (y==0)
+	if (y == 0)
 		return (1);
 	return (x * power(x, y - 1));
 }
@@ -32,7 +32,7 @@ unsigned int binary_to_uint(const char *b)
 	}
 	length = strlen(b);
 	index = length - 1;
-	for (i = 0; i < length, i++)
+	for (i = 0; i < length; i++)
 	{
 		if (b[i] != '0' && b[i] != '1')
 		{
