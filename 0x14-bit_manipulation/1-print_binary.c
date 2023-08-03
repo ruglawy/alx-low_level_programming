@@ -41,7 +41,7 @@ void print_binary(unsigned long int n)
 	}
 	for (i = p; i >= 0; i--)
 	{
-		if (power(2, i), <= n)
+		if (power(2, i) <= n)
 		{
 			printf("%d", 1);
 			n -= power(2, i);
