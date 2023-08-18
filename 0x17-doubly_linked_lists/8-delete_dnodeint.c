@@ -39,6 +39,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	ptr2 = tmp->next;
 	ptr1->next = ptr2;
 	ptr2->prev = ptr1;
-	free(temp);
+	free(tmp);
 	return (1);
 }
